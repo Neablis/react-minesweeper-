@@ -1,0 +1,22 @@
+{{addRemoteCSS "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"}}
+
+{{!-- {{addLocalCSS "/styles/dependencies.css"}} --}}
+{{addLocalCSS "/styles/app.css"}}
+
+
+{{#remoteCSS}}
+<link rel="stylesheet" href="{{{.}}}">
+{{/remoteCSS}}
+
+{{#localCSS}}
+  {{#if this.oldIE}}
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="{{{this.oldIE}}}">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="{{{this.path}}}">
+    <!--<![endif]-->
+  {{else}}
+    <link rel="stylesheet" href="{{{this.path}}}">
+  {{/if}}
+{{/localCSS}}

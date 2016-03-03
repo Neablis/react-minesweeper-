@@ -1,0 +1,75 @@
+@import "variables";
+
+html, body {
+    /* Set your content font stack here: */
+    font-size: 16px;
+    line-height: 1.5em;
+    min-height: 100vh;
+    background-color: $light-grey;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #485864;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.wrapper,
+#applications-wrapper,
+.frontend-container,
+.ui.main.container {
+    min-height: 100vh;
+}
+
+.frontend-container.no.height {
+    min-height: inherit;
+}
+
+.home {
+    .banner {
+        height: 25px;
+        .lost {
+            color: white;
+            background-color: red;
+            padding: 10px;
+        }
+    }
+    .table {
+        &.minesweeper {
+            td {
+                &.active {
+                    background-color: #ffeeff;
+                }
+                &.mark {
+                    background-color: #eeffff;
+                }
+                &.dead {
+                    background-color: red;
+                }
+
+                &.unclicked {
+                    color: #fffffa;
+                }
+                border: 1px solid #ccc;
+                cursor: pointer;
+                background-color: #fffffa;  
+            }
+        }
+    }
+}
+
+
+
+
+
+// Boilerplate
+@import "utilities";
+@import "footer";
+
+// Components
+@import "header";
+@import "home";
+@import "c3-graphs";

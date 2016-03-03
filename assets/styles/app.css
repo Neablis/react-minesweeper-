@@ -1,0 +1,23 @@
+.my-sidebar {
+  max-width: 200px;
+}
+
+.my-main {
+  margin-left: 200px;
+}
+
+.ui.button.itemLink {
+  margin: 0.5em;
+}
+
+.ui.button.recipient {
+  margin: 0.15em;
+}
+
+.itemLink {
+    display: block;
+}
+
+.itemLink:hover {
+    background: #F0F9FF;
+}
