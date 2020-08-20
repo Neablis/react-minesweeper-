@@ -12,7 +12,7 @@
     "babel-preset-react": "^6.0.15",
     "babel-runtime": "^5.8.24",
     "babelify": "^6.1.2",
-    "bcrypt": "^0.8.4",
+    "bcrypt": "^5.0.0",
     "bcryptjs": "^2.3.0",
     "bluebird": "^2.9.34",
     "connect-gzip-static": "^1.0.0",
